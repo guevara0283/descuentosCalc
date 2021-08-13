@@ -4,8 +4,9 @@ function resultado(){
     var resultado=(precio*descuento)/100;
     var ahorro=(precio*descuento)/100;
    
-   document.getElementById('ahorro').innerText = 'Su ahorro es de: $' + (ahorro);
-   document.getElementById('resultado').innerText = 'El precio total a pagar con descuento es: $' + (precio - resultado);
+    document.getElementById('resultado').innerText = 'Cuenta total con propina: $' + (precio + resultado);  
+    document.getElementById('ahorro').innerText = 'La propina es de: $' + (ahorro);
+   
 }
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
